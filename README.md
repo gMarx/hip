@@ -30,3 +30,7 @@ Lt. Blue  #13B1D6
 Green     #16F772
 Purple    #A11ADB
 Red       #F70729
+
+includes
+Bootstrap ( https://getbootstrap.com/docs/4.3/examples/ )
+Font awesome ( https://fontawesome.com/icons?d=gallery )
