@@ -34,3 +34,4 @@ Red       #F70729
 includes
 Bootstrap ( https://getbootstrap.com/docs/4.3/examples/ )
 Font awesome ( https://fontawesome.com/icons?d=gallery )
+Devise ( https://guides.railsgirls.com/devise )
