@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+Colors
+Blue      #222EEE
+Lt. Blue  #13B1D6
+Green     #16F772
+Purple    #A11ADB
+Red       #F70729

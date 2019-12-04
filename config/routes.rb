@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
 
   get '/about' => 'application#about'
-  get '/contact_me' => 'application#contact'
+  get '/contact_me' => 'contacts#new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
     # The priority is based upon order of creation: first created -> highest priority.
