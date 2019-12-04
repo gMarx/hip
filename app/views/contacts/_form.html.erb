@@ -1,0 +1,54 @@
+<%= form_with(model: contact, local: true) do |form| %>
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls field">
+      <% form.label :name %>
+      <%= form.text_field :name, id: :contact_name, class: "form-control", placeholder: "Keanu Reeves" %>
+      <!-- <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name."> -->
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls field">
+      <%= form.label :email %>
+      <%= form.text_field :email, id: :contact_email, class: "form-control", placeholder: "Keanu@johnwick3.com" %>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <%= form.label :phone %>
+      <%= form.number_field :phone, id: :contact_phone, class: "form-control", placeholder: "(415) 867-5309" %>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <%= form.label :message %>
+      <%= form.text_area :message, id: :contact_message, class: "form-control", placeholder: "Tell me what you want", rows: "5"  %>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+
+  <div class="actions">
+    <br>
+  <div id="success"></div>
+  <div class="form-group actions">
+    <%= form.submit class: "btn btn-primary", id:"sendMessageButton" %>
+  </div>
+
+  </div>
+<% end %>

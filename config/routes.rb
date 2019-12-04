@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :contacts
   root 'posts#index'
 
   resources :posts do
@@ -7,7 +8,7 @@ Rails.application.routes.draw do
   end
 
   get '/about' => 'application#about'
-  get '/contact' => 'application#contact'
+  get '/contact_me' => 'application#contact'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
     # The priority is based upon order of creation: first created -> highest priority.
