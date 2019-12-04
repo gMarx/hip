@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :contacts
-  root 'posts#index'
+  root 'application#home'
 
   resources :posts do
     resources :comments, only: :create

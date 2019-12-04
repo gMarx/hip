@@ -4,4 +4,7 @@ class ApplicationController < ActionController::Base
   def about
   end
 
+  def home
+  end
+
 end
