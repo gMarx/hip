@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments, only: :create
   end
+
+  get '/about' => 'application#about'
+  get '/contact' => 'application#contact'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
     # The priority is based upon order of creation: first created -> highest priority.
